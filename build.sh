@@ -7,4 +7,5 @@ echo ${repository_name}
 project_version=$(cat ./PROJECT_VERSION.txt)
 echo ${project_version}
 # Build image
+cat ${repository_name}/nodejs-app:${project_version}
 docker build -t ${repository_name}/nodejs-app:${project_version} -f Dockerfile .
