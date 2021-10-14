@@ -8,4 +8,4 @@ echo ${repository_push_name}
 project_version=$(cat ./PROJECT_VERSION.txt)
 echo ${project_version}
 
-docker push ${repository_push_name}:${project_version}
+docker push ${repository_name}/nodejs-app:${project_version}

@@ -7,4 +7,4 @@ echo ${run_value.txt}
 project_version=$(cat ./PROJECT_VERSION.txt)
 echo ${project_version}
 
-docker run -p 8080:8080 -d ${run_value}:${project_version}
+docker run -p 8080:8080 -d ${repository_name}/nodejs-app:${project_version}
