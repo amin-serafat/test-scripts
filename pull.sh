@@ -7,4 +7,4 @@ echo ${repository_pull_name}
 project_version=$(cat ./PROJECT_VERSION.txt)
 echo ${project_version}
 
-docker pull ${repository_name}/nodejs-app:${project_version}
+docker pull ${repository_name}/${repository_name}:${project_version}
