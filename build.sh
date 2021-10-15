@@ -7,7 +7,4 @@ echo ${repository_name}
 project_version=$(cat ./PROJECT_VERSION.txt)
 echo ${project_version}
 # Build image
-repo=$(${repository_name}/${project_version})
-echo "docker repository name and image"
-echo $repo
 docker build -t ${repository_name}/nodejs:${project_version} -f Dockerfile .

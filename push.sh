@@ -8,6 +8,4 @@ echo ${repository_push_name}
 project_version=$(cat ./PROJECT_VERSION.txt)
 echo ${project_version}
 
-echo "docker repository name and image"
-echo $repo
-docker push ${repository_name}/nodejs:${project_version}
+docker push ${repository_push_name}/nodejs:${project_version}
