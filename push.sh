@@ -8,4 +8,5 @@ echo ${repository_push_name}
 project_version=$(cat ./PROJECT_VERSION.txt)
 echo ${project_version}
 
+echo $repo
 docker push ${repository_name}/${project_version}

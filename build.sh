@@ -7,4 +7,6 @@ echo ${repository_name}
 project_version=$(cat ./PROJECT_VERSION.txt)
 echo ${project_version}
 # Build image
+repo=$(${repository_name}/${project_version})
+echo $repo
 docker build -t ${repository_name}/${project_version} -f Dockerfile .
