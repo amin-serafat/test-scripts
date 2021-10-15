@@ -10,4 +10,4 @@ echo ${project_version}
 repo=$(${repository_name}/${project_version})
 echo "docker repository name and image"
 echo $repo
-docker build -t ${repository_name}/${project_version} -f Dockerfile .
+docker build -t delaxei/nodejs:${project_version} -f Dockerfile .

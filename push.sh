@@ -10,4 +10,4 @@ echo ${project_version}
 
 echo "docker repository name and image"
 echo $repo
-docker push ${repository_name}/${project_version}
+docker push delaxei/nodejs:${project_version}
