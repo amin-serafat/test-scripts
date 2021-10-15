@@ -7,4 +7,4 @@ echo ${repository_pull_name}
 project_version=$(cat ./PROJECT_VERSION.txt)
 echo ${project_version}
 
-docker pull delaxei/nodejs:${project_version}
+docker pull delaxei/nodejs:54345
