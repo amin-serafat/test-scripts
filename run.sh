@@ -2,7 +2,7 @@
 
 #Run image
 run_value=$(cat ./secrets/run_value.txt)
-echo ${run_value.txt}
+echo ${run_value}
 # Getting name of image
 project_version=$(cat ./PROJECT_VERSION.txt)
 echo ${project_version}
